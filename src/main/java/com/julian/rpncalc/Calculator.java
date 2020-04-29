@@ -40,10 +40,6 @@ public class Calculator {
      */
     private void processOperator(String operatorString) throws CalculatorException {
 
-        if (valuesStack.isEmpty()) {
-            throw new CalculatorException("empty stack");
-        }
-
         // searching for the operator
         Operation operation = Operation.getEnum(operatorString);
         if (operation == null) {
@@ -89,7 +85,7 @@ public class Calculator {
     }
 
     public Double getLastValue() {
-        return valuesStack.peek();
+        return valuesStack.isEmpty() ? null: valuesStack.peek();
     }
 
     /**

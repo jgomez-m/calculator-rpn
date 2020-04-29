@@ -5,7 +5,7 @@ import java.util.Map;
 
 public enum Operation {
     ADDITION("+", 2) {
-        public Double calculate(Double firstOperand, Double secondOperand) throws CalculatorException {
+        public Double calculate(Double firstOperand, Double secondOperand) {
             return secondOperand + firstOperand;
         }
     },

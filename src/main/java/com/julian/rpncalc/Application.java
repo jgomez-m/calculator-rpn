@@ -22,15 +22,17 @@ public class Application {
             } else {
                 try {
                     calculator.eval(inputString);
+                    DecimalFormat fmt = new DecimalFormat("0.####");
+                    Double lastValue = calculator.getLastValue();
+                    if(lastValue != null) {
+                        System.out.println(fmt.format(lastValue));
+                    }
                 } catch (CalculatorException e) {
                     System.out.println(e.getMessage());
                 }
-
-                DecimalFormat fmt = new DecimalFormat("0.####");
-                Double lastValue = calculator.getLastValue();
-                System.out.println(fmt.format(lastValue));
             }
         }
+        System.out.println("Bye, bye!!");
         System.exit(0);
     }
 }

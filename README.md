@@ -6,6 +6,12 @@ Numbers are pushed into the stack. Operators operate on numbers that are on the 
  
 Available operators are `+`, `-`, `*`, `/`
 
+Both numbers and operations are separated by space, ie:
+
+`4 5 +`
+
+`322 54 - 24 *`
+
 - The `clear` operator removes all items from the stack.
 - The `+`, `-`, `*`, `/` operators perform addition, subtraction, multiplication and division respectively on the top two items from the stack.
 - The calculator exit when it receives a `q` command
