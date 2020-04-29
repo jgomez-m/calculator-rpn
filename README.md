@@ -8,6 +8,7 @@ Available operators are `+`, `-`, `*`, `/`
 
 - The `clear` operator removes all items from the stack.
 - The `+`, `-`, `*`, `/` operators perform addition, subtraction, multiplication and division respectively on the top two items from the stack.
+- The calculator exit when it receives a `q` command
 
 If an operator cannot find a sufficient number of parameters on the stack, a warning message is displayed:
  
