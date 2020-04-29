@@ -26,15 +26,13 @@ If an operator cannot find a sufficient number of parameters on the stack, a war
 
 - Tests require JUnit and Mockito
 
-- Dependencies are managed by Maven
+- Dependencies are managed by Maven 3
 
 
-## Compile, Test, Run and Packaging
+## Compile, Test, and Run
 
 - Compile: `mvn compile`
 
 - Test: `mvn test`
 
 - Run: `mvn exec:java`
-
-- Packaging: `mvn package`, compiled jar in *target/* folder
