@@ -12,7 +12,7 @@ Available operators are `+`, `-`, `*`, `/`
 
 If an operator cannot find a sufficient number of parameters on the stack, a warning message is displayed:
  
-`operator <operator> has not enough parameters`
+`operator <operator> doesn't have enough parameters`
 
 ## Requirements
 

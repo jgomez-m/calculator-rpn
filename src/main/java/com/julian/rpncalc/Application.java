@@ -2,7 +2,6 @@ package com.julian.rpncalc;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
-import java.util.Stack;
 
 public class Application {
     static String command;
@@ -19,7 +18,7 @@ public class Application {
             Scanner sc = new Scanner(System.in);
             String inputString = sc.nextLine();
             if ("q".equals(inputString)) {
-                System.exit(0);
+                keepRunning = false;
             } else {
                 try {
                     calculator.eval(inputString);
@@ -32,5 +31,6 @@ public class Application {
                 System.out.println(fmt.format(lastValue));
             }
         }
+        System.exit(0);
     }
 }

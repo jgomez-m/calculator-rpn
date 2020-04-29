@@ -78,7 +78,7 @@ public class Calculator {
 
     private void throwInvalidOperand(String operator) throws CalculatorException {
         throw new CalculatorException(
-                String.format("operator %s has not enough parameters", operator, currentTokenIndex));
+                String.format("operator %s doesn't have enough parameters", operator, currentTokenIndex));
     }
 
     /**
