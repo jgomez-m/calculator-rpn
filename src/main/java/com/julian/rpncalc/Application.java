@@ -1,5 +1,8 @@
 package com.julian.rpncalc;
 
+import com.julian.rpncalc.input.InputStreamI;
+import com.julian.rpncalc.input.StandardConsole;
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -15,8 +18,8 @@ public class Application {
 
         boolean keepRunning = true;
         while (keepRunning) {
-            Scanner sc = new Scanner(System.in);
-            String inputString = sc.nextLine();
+            InputStreamI inputStream = StandardConsole.getInstance();
+            String inputString = inputStream.getNextStream();
             if ("q".equals(inputString)) {
                 keepRunning = false;
             } else {
